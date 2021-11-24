@@ -1,0 +1,16 @@
+
+/* #banner {
+    height: 608px;
+    width: 98%;
+} */
+#space{
+   height: 85%;
+}
+#slogan {
+    text-align: center;
+     color: #92249c; 
+     font-style: italic; 
+     font-size: 20px;
+     text-shadow: -2px 1px #c5c5c5;
+     padding-top: 1px;
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fitness Mania</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<!-- Js files for jquery,emantic js and css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<script src="form.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="nav.css"> 
+    <link rel="stylesheet" href="banner.css"> 
+    <!-- <link rel="stylesheet" href="attraction.css">  -->
+    <link rel="stylesheet" href="price.css"> 
+
+</head>
+<body>
+    <div class="ui container">
+        <nav id="nav" style="position: sticky; top: 0px; background-color: #ffffff; z-index: 100;">
+            <div class="ui secondary pointing menu">
+                <a class="item">
+                   <div id="logo"><img src="pictures/logo.jpg" height="45px" width="53px"></div>
+                  </a>
+                 <a class="item nmplus">
+                  <p class="nm">Fitness</p>
+                  <p class="nm">Mania</p>
+                </a> 
+                <a class="item active">
+                  Home
+                </a>
+                <!-- <a class="item">
+                    About Us
+                  </a> -->
+                <a class="item">
+                  Locate Us
+                </a>
+                <div class="right menu" id="login" >
+                  <a class="ui item" style="color: #92249c; font-weight: bolder;">
+                    Login/SignUp
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="ui segment">
+                <p></p>
+              </div> -->
+        </nav>
+        <section id="banner">
+            <div class="ui stackable four column grid" id="space">
+                <div id="banner"><img src="pictures/banner 3.jpg" width="99%" height="97%" style="padding-left: 1%; margin-bottom:0px;" ></div>
+              </div>
+              <p id="slogan">#It is not only for body it's about lifestyle</p>
+        </section>
+        <section id="workout">
+            <h2>WORKOUT</h2>
+            <div class="ui stackable three column grid">
+                <div class="column">
+                    <a href=""><p>Exercise using machine</p>
+                        <img src="pictures/ex-machine.jpg" width= "100%">
+                        </a>
+                </div>
+                <div class="column">
+                    <a href=""><p>Cardio</p>
+                        <img src="pictures/cardio.jpg" width= "100%">
+                        </a>
+                </div>
+                <div class="column">
+                    <a href=""><p>Zumba and other fitnees dances</p>
+                    <img src="pictures/zumba dance.jpg" width= "100%">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href=""><p>Yoga</p>
+                    <img src="pictures/yoga workout.jpg" width="100%">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href=""><p>online programmes</p>
+                    <img src="pictures/online excercise.jpg" width="100%">
+                    </a>
+                </div>
+              </div>
+
+        </section>
+        <!-- add lable from semantic in the sentence-->
+        <section id="event" style="margin-bottom: 10px;">
+            <h2>Events</h2>
+            <div class="ui grid">
+                <div class="seven wide column"><h3>Every week price winning challenges</h3></div>
+                <div class="nine wide column"><img src="pictures/prize2.jpg" width="60%"></div>
+            </div>
+        </section>
+        <section id="attraction">
+            <h2>We give you more than anyone else does</h2>
+           <div id="steambath">
+                <div class="ui grid">
+                <div class="six wide column"><div class="ui fade reveal image">
+                    <img class="visible content" src="pictures/hotroom.jpg" width="50%">
+                    <img class="hidden content" src="pictures/hotroomHot2.jpg" width="50%">
+                    <!-- chng 2nd img to with person -->
+                  </div></div>
+                <div class="six wide column">STEAM BATH</div>
+                </div>
+            </div>
+            <div id="massage">
+                <div class="ui grid">
+                    <div class="six wide column">MASSAGE</div>
+                  <div class="six wide column"><div class="ui small fade reveal image">
+                    <img class="visible content" src="pictures/massage real1.jpg">
+                    <img class="hidden content" src="pictures/massage real 2.jpg" >
+                  </div></div>
+                </div>
+            </div>
+           <div id="yoga">
+                <div class="ui grid">
+                <div class="six wide column"><div class="ui small fade reveal image">
+                    <img class="visible content" src="pictures/yoga real 2.jpg">
+                    <img class="hidden content" src="pictures/yoga real.jpg" >
+                  </div></div>
+                <div class="six wide column">YOGA</div>
+                </div>
+            </div>
+            <div id="fitnessdance">
+                <div class="ui grid">
+                    <div class="six wide column">FITNESS DANCES</div>
+                  <div class="six wide column"><div class="ui small fade reveal image">
+                    <img class="visible content" src="pictures/dance1.jpg">
+                    <img class="hidden content" src="pictures/dance2.jpg" >
+                  </div></div>
+                </div>
+            </div>
+           <div id="dietician">
+                <div class="ui grid">
+                <div class="six wide column"><div class="ui small fade reveal image">
+                    <img class="visible content" src="pictures/dietician hover1.jpg">
+                    <img class="hidden content" src="pictures/deitician hover 2.jpg" >
+                  </div></div>
+                <div class="six wide column">DIETICIAN</div>
+                </div>
+            </div>
+            <div id="shower">
+                <div class="ui grid">
+                    <div class="six wide column">HOT/COLD SHOWER</div>
+                  <div class="six wide column"><div class="ui small fade reveal image">
+                    <img class="visible content" src="pictures/cold shower.jpg">
+                    <img class="hidden content" src="pictures/hot shower.jpg" >
+                  </div></div> 
+                </div>
+            </div>
+            <div id="locker">
+                <div class="ui grid">
+                <div class="six wide column"><div class="ui small fade reveal image">
+                    <img class="visible content" src="pictures/open locker.jpg">
+                    <img class="hidden content" src="pictures/closed locker.jpg">
+                  </div></div>
+                <div class="six wide column">IDCARD SWIPE LOCKERS</div>
+                </div>
+            </div>   
+        </section>
+        <section id="price">
+            <h2>Price</h2>
+            <h3 style="text-align: center; margin-bottom: 40px;">Registration Fees- 4000/-(Lifetime Membership)</h3>
+            <div class="ui stackable four column grid">
+                <div class="column" id="gymclub">
+                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;">Gym Club</h4>
+                    <p>Price- 3000/- per month</p>
+                    <p style="margin-bottom:10% ;">(including 2 showers per week + locker)</p>
+                    <p>extra 1000/- for personal trainer</p>
+                    <p>Online gym- 2400/-</p>
+                </div>
+                </div>
+                <div class="column" id>
+                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;">Steam Bath Club</h4>
+                        <p>Price- 2000/- for 12 baths per month</p>
+                        <p style="margin-bottom:10% ;">(after that 200/- per bath for month)</p>
+                        <p>extra 1000/- for individual use room</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;">Massage Club</h4>
+                    <p>Price- 2500/- for 12 massages per month (time-1.5 hour)</p>
+                    <p style="margin-bottom:10% ;">(after that 150/- per massage for the month)</p>
+                    <p>(extra 100 for one hour more for the day)</p>
+                </div></div>
+                <div class="column">
+                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;">Yoga Club</h4>
+                    <p>Price- 1700/- per month every weekday(time 1 hour per day)</p>
+                    <p style="margin-bottom:10% ;">(includes 1 locker)</p>
+                    <p>(extra 1000/- for personal guru)</p>
+                    <p>Price-1000/- for online class</p>
+                    </div></div>
+                    <div class="column">
+                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;">Fitness Dance Club</h4>
+                    <p>Price- 1700/- per month for one hour every weekdays</p>
+                    <p style="margin-bottom:10% ;">(includes 1 locker and 2 showers per week)</p>
+                    <p>extra 1000/- for individual trainer</p>
+                    <p>Price- 1000/- for online class</p>
+                </div></div>
+                <div class="column">
+                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;">Diet Club</h4>
+                    <p>Price- 600/- per month</p>
+                    <p style="margin-bottom:10% ;">(500/- for body nutrition test whenever asked)</p>
+                    <p>Price- 600/- for online consultant</p>
+                </div></div>
+                <div class="column">
+                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;">Shower</h4>
+                    <p>Price- 600/- for 12 days per month</p>
+                    <p style="margin-bottom:10% ;">(after that 25/- per day for month)</p>
+                    <p>only for registered members</p>
+                    </div></div>
+
+              </div>
+              
+        </section>
+        <section id="form" style="margin-top: 20px ;">
+            <div class="ui stackable two column grid">
+                <div class="column" id="credentials">
+                    <h2>Interested! Fill this form to join</h2>
+                    <form class="ui form">
+                        <div class="field" id="name">
+                          <label>Name</label>
+                          <input type="text" name="name" placeholder="Prayash Kumar Satpathy">
+                        </div>
+                        <div class="field" id="age">
+                          <label>Age</label>
+                          <input type="number" name="age" placeholder="18">
+                        </div>
+                        <div class="field" id="bg">
+                          <label>Blood Group</label>
+                          <input type="text" name="bg" placeholder="B+">
+                        </div>
+                        <div class="ui form" id="gender">
+                            <div class="field">
+                              <label>Gender</label>
+                              <select class="ui search dropdown">
+                                <option value="">Select Gender</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                                <option value="O">Others</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="field" id="number" style="margin-top:20px ;">
+                            <label>Contact No.(with country code)</label>
+                            <input type="text" name="no." placeholder="(+91)2008408408">
+                          </div>
+                          <div class="field" id="email">
+                            <label>Email Id</label>
+                            <input type="email" name="email" placeholder="you@gmail.com">
+                          </div>
+                        <div class="field" id="chkbox">
+                          <div class="checkbox">
+                            <input type="checkbox" tabindex="0" class="hidden">
+                            <label style="position: relative;top: -4px;"><a href="">I agree to the Terms and Conditions</a></label>
+                          </div>
+                        </div>
+                        <!-- <button class="ui violet button" type="submit">
+                            Submit
+                          </button> -->
+                          <button class="ui button" type="reset">
+                            Reset
+                          </button>                  
+                          </form>       
+                </div>
+                <div class="column" id="chooseplans">
+                    <!-- <h2 style="text-align: center; margin-bottom: 20px;">Select plans</h2> -->
+                    
+                    <div class="ui form">
+                        <div class="field">
+                          <label style=" font-size: 15px; margin-top: 90px;">Select Plan</label>
+                          <select multiple="" class="ui dropdown">
+                            <option value="">Choose Plan/s</option>
+                            <option value="gym">Gym Club</option>
+                            <option value="gym">Gym Club(online)</option>
+                            <option value="bath">Steam Club</option>
+                            <option value="massage">Massage Club</option>
+                            <option value="yoga">Yoga Club</option>
+                            <option value="yoga">Yoga Club(online)</option>
+                            <option value="Xdance">Fitness Dance Club</option>
+                            <option value="Xdance">Fitness Dance Club(online)</option>
+                            <option value="diet">Diet Club</option>
+                            <option value="diet">Diet Club(online)</option>
+                            
+                           </select>                          
+                        </div>
+                    </div>
+                        <div id="total" style=" font-size:30px; color: rgb(83, 196, 248); margin-top: 45%;margin-bottom: 5%;"> <p>Total Amount-</p></div>
+                        <div style="text-align: center;">    <a href="" ><button class="ui violet button">
+                                SignUp and Proceed to Payment
+                              </button></a>  </div> 
+
+                </div>
+            </div>
+        </section>      
+    </div>
+    <footer>
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+              <div class="ui stackable inverted divided equal height stackable grid">
+                <div class="three wide column">
+                  <h4 class="ui inverted header">About</h4>
+                  <div class="ui inverted link list">
+                    <a href="#" class="item">Sitemap</a>
+                    <a href="#" class="item">Contact Us</a>
+                    <a href="#" class="item">Religious Ceremonies</a>
+                    <a href="#" class="item">Gazebo Plans</a>
+                  </div>
+                </div>
+                <div class="three wide column">
+                  <h4 class="ui inverted header">Services</h4>
+                  <div class="ui inverted link list">
+                    <a href="#" class="item">Banana Pre-Order</a>
+                    <a href="#" class="item">DNA FAQ</a>
+                    <a href="#" class="item">How To Access</a>
+                    <a href="#" class="item">Favorite X-Men</a>
+                  </div>
+                </div>
+                <div class="seven wide column">
+                  <h4 class="ui inverted header">Footer Header</h4>
+                  <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>

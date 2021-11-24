@@ -1,0 +1,31 @@
+#nav {
+margin-bottom: 16px;
+}
+/* .logo{
+    margin-top: 4px;
+    padding-top: 2px;
+    height: 9px;
+    
+} */
+.nm {
+    font-family: 'Lobster', cursive;
+    color:#92249c;
+}
+/* #login{
+    border-bottom: 2px solid rgba(34,36,38,.15);
+} */
+
+
+.nmplus {
+/* padding-top: 8px; */
+padding-bottom: 0px;
+/* border-bottom-width: -100px ; */
+}
+.ui.secondary.pointing.menu .active.item {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #92249c;
+    font-weight: 700;
+    color:#92249c;
+}
