@@ -54,11 +54,23 @@ function selecttimefunc(val)
   console.log(total);
   discount= (total*discountper)/100;
 let fp=0;
+
 fp=total-discount;
 console.log(fp);
 let val=document.getElementById("final");
 // val.style(color: aqua)
-val.innerText= fp;
+if(discountper==5){
+  
+  val.innerText= fp;
+}
+else if(discountper==10)
+{
+val.innerText=fp*6;
+}
+else if(discountper==20)
+{
+  val.innerText=fp*12;
+}
 val.style.fontSize="20px";
 val.style.color="black"
 val.style.fontWeight="bolder";
