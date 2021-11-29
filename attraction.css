@@ -1,0 +1,71 @@
+#steamatt{
+    border: 1px solid black; 
+    box-shadow:1px -1px 2px rgb(168 168 168), -1px 1px 2px rgb(168 168 168) ;
+    padding:10px;
+     margin: 10px;
+}
+#steamatttxt{
+    font-style: oblique;
+    text-shadow: -1.5px 1px rgb(230, 229, 229);
+}
+#massageatt{
+    border: 1px solid black;
+     box-shadow:1px -1px 2px rgb(168 168 168), -1px 1px 2px rgb(168 168 168) ;
+     padding:10px;
+     margin: 10px;
+}
+#massageatttxt{
+    font-style: oblique;
+    text-shadow: -1.5px 1px rgb(230, 229, 229);
+}
+#yogaatt{
+    border: 1px solid black;
+     box-shadow:1px -1px 2px rgb(168 168 168), -1px 1px 2px rgb(168 168 168) ;
+     padding:10px;
+     margin: 10px;
+}
+#yogaatttxt{
+    font-style: oblique;
+    text-shadow: -1.5px 1px rgb(230, 229, 229);
+}
+#danceatt{
+    border: 1px solid black; 
+    box-shadow:1px -1px 2px rgb(168 168 168), -1px 1px 2px rgb(168 168 168) ;
+    padding:10px;
+    margin: 10px;
+}
+#dancetxtatt{
+    font-style: oblique;
+    text-shadow: -1.5px 1px rgb(230, 229, 229);
+}
+#dietatt{
+    border: 1px solid black; 
+    box-shadow:1px -1px 2px rgb(168 168 168), -1px 1px 2px rgb(168 168 168) ;
+    padding:10px;
+    margin: 10px;
+}
+#diettxtatt{
+    font-style: oblique;
+    text-shadow: -1.5px 1px rgb(230, 229, 229);
+}
+#showeratt{
+    border: 1px solid black;
+     box-shadow:1px -1px 2px rgb(168 168 168), -1px 1px 2px rgb(168 168 168) ;
+     padding:10px;
+     margin: 10px;
+}
+#showertxtatt{
+    font-style: oblique;
+    text-shadow: -1.5px 1px rgb(230, 229, 229);
+}
+#lockeratt{
+    border: 1px solid black; 
+    box-shadow:1px -1px 2px rgb(168 168 168), -1px 1px 2px rgb(168 168 168) ;
+    padding:10px;
+    margin: 10px;
+}
+#lockertxtatt{
+    font-style: oblique;
+    text-shadow: -1.5px 1px rgb(230, 229, 229);
+}
+

@@ -1,8 +1,9 @@
 
-/* #banner {
-    height: 608px;
-    width: 98%;
-} */
+#imgbr{
+    margin-left: 0.5%;
+     margin-bottom:0px; 
+     box-shadow:1px -1px 2px rgb(168 168 168), -1px 1px 2px rgb(168 168 168) ;
+}
 #space{
    height: 85%;
 }

@@ -1,0 +1,15 @@
+#event{
+    margin: 20px; 
+    width: 100%;
+}
+#txtev{
+    text-shadow: -1.5px 1px rgb(230, 229, 229);
+    text-align: center;
+}
+#imgev{
+    min-width: 150px; 
+    position: relative; 
+    left: 10%;
+     top: -4px; 
+     box-shadow:1px -1px 2px rgb(168 168 168), -1px 1px 2px rgb(168 168 168) ;
+}
