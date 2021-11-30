@@ -1,6 +1,7 @@
 #event{
     margin: 20px; 
     width: 100%;
+    margin-top: 35px;
 }
 #txtev{
     text-shadow: -1.5px 1px rgb(230, 229, 229);
