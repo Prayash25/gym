@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Fitness Mania</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<!-- Js files for jquery,semantic js and css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
-<script src="form.js" type="text/javascript"></script>
-<script src="nav.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="nav.css"> 
-    <link rel="stylesheet" href="banner.css">  
-    <link rel="stylesheet" href="attraction.css"> 
-    <link rel="stylesheet" href="price.css"> 
-    <link rel="stylesheet" href="form.css"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Fitness Mania</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- Js files for jquery,semantic js and css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+  <script src="form.js" type="text/javascript"></script>
+  <script src="nav.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="banner.css">
+  <link rel="stylesheet" href="attraction.css">
+  <link rel="stylesheet" href="price.css">
+  <link rel="stylesheet" href="form.css">
 
 </head>
+
 <body>
   <!-- <script>
   //     $("#1mon").click(function(){
@@ -73,519 +75,597 @@
     }
     </script> -->
   <div>
-      <nav id="nav">
-          <div class="ui secondary pointing menu">
-              <a class="item">
-                 <div><img src="pictures/logo-modified.png" height="45px" width="45px"></div>
-                </a>
-               <a class="item nmplus">
-                <p class="nm">Fitness</p>
-                <p class="nm">Mania</p>
-              </a> 
-              <a class="item active">
-                Home
+    <nav id="nav">
+      <div class="ui secondary pointing menu">
+        <a class="item">
+          <div><img src="pictures/logo-modified.png" height="45px" width="45px"></div>
+        </a>
+        <a class="item nmplus">
+          <p class="nm">Fitness</p>
+          <p class="nm">Mania</p>
+        </a>
+        <a class="item active">
+          Home
+        </a>
+
+        <div class="ui menu dropdown" id="direct" style="border: none;box-shadow: none;">
+          <div class="ui pointing dropdown link item">
+            <span class="text">DirectTo</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="gym.html" style="color: black;">
+                <div class="item"> Top</div>
               </a>
-              
-              <div class="ui menu dropdown" id="direct" style="border: none;box-shadow: none;">               
-                <div class="ui pointing dropdown link item">
-                  <span class="text">DirectTo</span>
-                  <i class="dropdown icon"></i>
-                  <div class="menu">                   
-                    <a href="gym.html" style="color: black;"><div class="item"> Top</div></a>
-                    <a href="#workout" style="color: black;"><div class="item"> Workout</div></a>
-                    <a href="#attraction" style="color: black;"><div class="item">Special attractions</div></a>
-                    <a href="#areas" style="color: black;" ><div class="item">Rooms and staffs</div></a>
-                    <a href="#price" style="color: black;" ><div class="item">Price</div></a>
-                    <a href="#form" style="color: black;" ><div class="item">Form</div></a>
-                    <a href="#foot" style="color: black;" ><div class="item">Footer</div></a>
-                  </div>
-                </div>               
-              </div>
-              <div class="right menu" id="login" >
-                <a class="ui item" style="color: #92249c; font-weight: bolder;">
-                  Login/SignUp
-                </a>
-              </div>
-            </div>
-            <!-- <div class="ui segment">
-              <p></p>
-            </div> -->
-      </nav>
-        <section id="banner">
-            <div class="ui stackable four column grid" id="space">
-                <div id="banner"><img src="pictures/banner 3.jpg" id="imgba" width="99%" height="97%" ></div>
-              </div>
-              <p id="slogan">#It is not only for body it's about lifestyle</p>
-        </section>
-        <section id="workout">
-            <h2 style="color: #92249c;">WORKOUTS</h2>
-            <div class="ui stackable three column grid" style="margin-bottom:3px; margin-left: 20px!important;">
-                <div class="column" id="machinewo" style="max-width: 76%;">
-                  <div class="ui one cards">
-                    <a class="violet card">
-                      <div class="image">
-                        <img src="pictures/ex-machine.jpg" width= "100%">
-                        <div class="ui black ribbon label" style="font-style:italic ;">Exercise using machine</div>
-                      </div>
-                    </a>
-                 </div>
-                    <!-- <a href=""><p>Exercise using machine</p>
-                        <img src="pictures/ex-machine.jpg" width= "100%">
-                        </a> -->
-                </div>
-                <div class="column" id="cardiowo" style="max-width: 76%;">
-                  <div class="ui one cards">
-                    <a class="violet card">
-                      <div class="image">
-                        <img src="pictures/cardio.jpg" width= "100%">
-                        <div class="ui black ribbon label" style="font-style:italic ;">Cardio</div>
-                        
-                      </div>
-                    </a>
-                 </div>
-                 <!-- <a href=""><p>Cardio</p>
-                        <img src="pictures/cardio.jpg" width= "100%">
-                        </a> -->
-                </div>
-                <div class="column" id="danceswo" style="max-width: 76%;">
-                  <div class="ui one cards">
-                    <a class="violet card">
-                      <div class="image">
-                        <img src="pictures/zumba dance.jpg" width= "100%">
-                        <div class="ui black ribbon label" style="font-style:italic ;">Zumba and other Fitness dances</div>
-                        
-                      </div>
-                    </a>
-                 </div> 
-                  <!-- <a href=""><p>Zumba and other fitnees dances</p>
-                    <img src="pictures/zumba dance.jpg" width= "100%">
-                    </a> -->
-                </div>
-                <div class="column" id="yogawo" style="max-width: 76%;">
-                  <div class="ui one cards">
-                    <a class="violet card">
-                      <div class="image">
-                        <img src="pictures/yoga workout.jpg" width= "100%">
-                        <div class="ui black ribbon label" style="font-style:italic ;">Yoga</div>
-                      </div>
-                    </a>
-                 </div>   
-                  <!-- <a href=""><p>Yoga</p>
-                    <img src="pictures/yoga workout.jpg" width="100%">
-                    </a> -->
-                </div>
-                <div class="column" id="onlineprogwo" style="max-width: 76%;">
-                  <div class="ui one cards">
-                    <a class="violet card">
-                      <div class="image">
-                        <img src="pictures/online excercise.jpg" width= "100%">
-                        <div class="ui black ribbon label" style="font-style:italic ;">Online Programmes</div>
-                      </div>
-                    </a>
-                 </div>   
-                  <!-- <a href=""><p>online programmes</p>
-                    <img src="pictures/online excercise.jpg" width="100%">
-                    </a> -->
-                </div>
-              </div>
-        </section>
-        <section id="event">
-            <h2 style="color: #92249c; text-align:left ;">Events</h2>
-            <div class="ui grid">
-                <div class="six wide column" id="txtev"><h3>Every week price winning challenges</h3></div>
-                <div class="seven wide column"><img src="pictures/prize2.jpg" width="100%" id="imgev"></div>
-            </div>
-        </section>
-        <section id="attraction" style="margin-top:25px;">
-            <h2 style="color: #92249c;">We give you more than anyone else does</h2>
-           <div id="steamatt">
-                <div class="ui grid">
-                <div class="eight wide column">
-                  <div class="ui small fade reveal image">
-                    <img class="visible content" src="pictures/hotroom.jpg" width="100%">
-                    <img class="hidden content" src="pictures/hotroom2.jpg" width="100%">
-                   
-                  </div>
-                </div>
-                <div class="six wide column" id="steamatttxt"><h3 style="font-weight: bolder">STEAM BATH</h3>
-                <p style="text-shadow: none;">Enjoy our steam bath. We also provide you moisturising lotion and oils. Rejuvinate your body.</p></div>
-                </div>
-            </div>
-            <div id="massageatt">
-                <div class="ui grid">
-                    <div class="eight wide column" id="massageatttxt"><h3 style="font-weight: bolder;">MASSAGE</h3>
-                    <p style="text-shadow: none;">Our staffs are experienced. The rooms are well-ventilated. We provide both orthopedic and normal massage.</p></div>
-                  <div class="six wide column">
-                    <div class="ui small fade reveal image">
-                    <img class="visible content" src="pictures/massage real1.jpg" width="100%" >
-                    <img class="hidden content" src="pictures/massage real 2.jpg" width="100%">
-                  </div>
-                </div>
-                </div>
-            </div>
-           <div id="yogaatt">
-                <div class="ui grid">
-                <div class="eight wide column"><div class="ui small fade reveal image">
-                    <img class="visible content" src="pictures/yoga real 2.jpg">
-                    <img class="hidden content" src="pictures/yoga real.jpg" >
-                  </div></div>
-                <div class="six wide column" id="yogaatttxt"><h3 style="font-weight: bolder;">YOGA</h3><p style="text-shadow: none;">We teach you many asanas based upon body condition and take you a level up each day.</p></div>
-                </div>
-            </div>
-            <div id="danceatt">
-                <div class="ui grid">
-                    <div class="eight wide column" id="dancetxtatt"><h3 style="font-weight: bolder;">FITNESS DANCES</h3>
-                    <p style="text-shadow: none;">We provide you many fitness dances like zumba, aerobics and etc. The teachers are very friendly. The class which you never wish to skip for sure. </p></div>
-                  <div class="six wide column"><div class="ui small fade reveal image">
-                    <img class="visible content" src="pictures/dance1.jpg">
-                    <img class="hidden content" src="pictures/dance2.jpg" >
-                  </div></div>
-                </div>
-            </div>
-           <div id="dietatt">
-                <div class="ui grid">
-                <div class="eight wide column"><div class="ui small fade reveal image">
-                    <img class="visible content" src="pictures/dietician hover1.jpg">
-                    <img class="hidden content" src="pictures/deitician hover 2.jpg" >
-                  </div></div>
-                <div class="six wide column" id="diettxtatt"><h3 style="font-weight: bolder;">DIETICIAN</h3>
-                <p style="text-shadow: none;">We believe every body is unique. We examine your body and diet to give you a proper diet. Please feel free to ask us. </p></div>
-                </div>
-            </div>
-            <div id="showeratt">
-                <div class="ui grid">
-                    <div class="eight wide column" id="showeratttxt"><h3 style="font-weight: bolder;">HOT/COLD SHOWER</h3>
-                    <p style="text-shadow: none;">It is good to have cold showers after a workout. We also have gyesers. Our bathrooms are well-ventilated.</p></div>
-                  <div class="six wide column"><div class="ui small fade reveal image">
-                    <img class="visible content" src="pictures/hot shower.jpg">
-                    <img class="hidden content" src="pictures/cold shower.jpg" >
-                  </div></div> 
-                </div>
-            </div>
-            <div id="lockeratt">
-                <div class="ui grid">
-                <div class="eight wide column"><div class="ui small fade reveal image">
-                    <img class="visible content" src="pictures/closed locker.jpg">
-                    <img class="hidden content" src="pictures/open locker.jpg">
-                  </div></div>
-                <div class="six wide column" id="lockeratttxt"><h3 style="font-weight: bolder;">IDCARD SWIPE LOCKERS</h3>
-                <p style="text-shadow: none;">
-                  We have Id card swipe and open lockers.The Id card is your registration card itself. The lockers are spacious. 
-                </p></div>
-                </div>
-            </div>   
-        </section>
-        <section id="areas" style="margin: 15px;">
-          <h2 style="color: #92249c;font-weight: bolder;">Rooms and Staffs</h2>
-          <div class="ui stackable three column grid">
-            <div class="column" id="gymar">
-              <div class="ui raised card">
-                <div class="ui slide masked reveal image">
-                  <img src="pictures/gymroom.jpg" class="visible content">
-                  <img src="pictures/gymstaff.jpg" class="hidden content">
-                </div>
-                <div class="content">
-                  <a class="header" style="font-style: italic;">Gym Club</a>
-                </div>  
-              </div>
-            </div>
-            <div class="column" id="steamar">
-              <div class="ui raised card">
-                <div class="ui slide masked reveal image">
-                  <img src="pictures/hotroomar.jpg" class="visible content">
-                  <img src="pictures/steamequip.jpg" class="hidden content">
-                </div>
-                <div class="content">
-                  <a class="header" style="font-style: italic;">Steam Bath Club</a>
-                </div>  
-              </div>
-            </div>
-            <div class="column" id="masaagear">
-              <div class="ui raised card">
-                <div class="ui slide masked reveal image">
-                  <img src="pictures/massageroom.jpg" class="visible content">
-                  <img src="pictures/massage crew.jpg" class="hidden content">
-                </div>
-                <div class="content">
-                  <a class="header" style="font-style: italic;">Massage Club</a>
-                </div>  
-              </div>
-            </div>
-            <div class="column" id="yogaar">
-              <div class="ui raised card">
-                <div class="ui slide masked reveal image">
-                  <img src="pictures/yogaroom.jpg" class="visible content">
-                  <img src="pictures/yoga crew.jpg" class="hidden content">
-                </div>
-                <div class="content">
-                  <a class="header" style="font-style: italic;">Yoga Club</a>
-                </div>  
-              </div>
-            </div>
-            <div class="column" id="dancear">
-              <div class="ui raised card">
-                <div class="ui slide masked reveal image">
-                  <img src="pictures/danceroom.jpg" class="visible content">
-                  <img src="pictures/dance tutors.jpg" class="hidden content">
-                </div>
-                <div class="content">
-                  <a class="header" style="font-style: italic;">Fitness Dance Club</a>
-                </div>  
-              </div>
-            </div>
-            <div class="column" id="dietar">
-              <div class="ui raised card">
-                <div class="ui slide masked reveal image">
-                  <img src="pictures/nutritionist room.jpg" class="visible content">
-                  <img src="pictures/dieticians.jpg" class="hidden content">
-                </div>
-                <div class="content">
-                  <a class="header" style="font-style: italic;">Diet Club</a>
-                </div>  
-              </div>
+              <a href="#workout" style="color: black;">
+                <div class="item"> Workout</div>
+              </a>
+              <a href="#attraction" style="color: black;">
+                <div class="item">Special attractions</div>
+              </a>
+              <a href="#areas" style="color: black;">
+                <div class="item">Rooms and staffs</div>
+              </a>
+              <a href="#price" style="color: black;">
+                <div class="item">Price</div>
+              </a>
+              <a href="#form" style="color: black;">
+                <div class="item">Form</div>
+              </a>
+              <a href="#foot" style="color: black;">
+                <div class="item">Footer</div>
+              </a>
             </div>
           </div>
-        </section>
-        <section id="price" style="margin: 15px;">
-            <h2 style="color: #92249c;">Price</h2>
-            <!-- <h3 style="text-align: center; margin-bottom: 40px;">Registration Fees- 4000/-(Lifetime Membership)</h3> -->
-            <div class="ui stackable four column grid">
-                <div class="column" id="gympr">
-                    <div class="pricegrid"> <h4 style="margin-bottom: 10%; color: #92249c;font-weight: bolder;">Gym Club</h4>
-                    <div>
-                      <p>Price- 3000/- per month</p>
-                      <p style="margin: 0%; position: relative;top: -15px;">(including 9 showers per month + locker)</p>
-                      <p>extra 1000/- for personal trainer(for this visit us)</p>
-                      <p></p>
-                    </div>
+        </div>
+        <div class="right menu" id="login">
+          <a class="ui item" style="color: #92249c; font-weight: bolder;">
+            Login/SignUp
+          </a>
+        </div>
+      </div>
+      <!-- <div class="ui segment">
+              <p></p>
+            </div> -->
+    </nav>
+    <section id="banner">
+      <div class="ui stackable four column grid" id="space">
+        <div id="banner"><img src="pictures/banner 3.jpg" id="imgba" width="99%" height="97%"></div>
+      </div>
+      <p id="slogan">#It is not only for body it's about lifestyle</p>
+    </section>
+    <section id="workout">
+      <h2 style="color: #92249c; margin-left: 10px;">WORKOUTS</h2>
+      <div class="ui grid" style="margin-bottom:3px; margin-left: 20px!important;">
+        <div class="doubling three column row">
+
+
+          <div class="column" id="machinewo" style="max-width: 76%; margin-bottom: 19px;">
+            <div class="ui one cards">
+              <a class="violet card">
+                <div class="image">
+                  <img src="pictures/ex-machine.jpg" width="100%">
+                  <div class="ui black ribbon label" style="font-style:italic ;">Exercise using machine</div>
                 </div>
+              </a>
+            </div>
+            <!-- <a href=""><p>Exercise using machine</p>
+                        <img src="pictures/ex-machine.jpg" width= "100%">
+                        </a> -->
+          </div>
+          <div class="column" id="cardiowo" style="max-width: 76%;">
+            <div class="ui one cards">
+              <a class="violet card">
+                <div class="image">
+                  <img src="pictures/cardio.jpg" width="100%">
+                  <div class="ui black ribbon label" style="font-style:italic ;">Cardio</div>
+
                 </div>
-                <div class="column" id="bathpr">
-                    <div class="pricegrid"> <h4 style="margin-bottom: 10%; color: #92249c;font-weight: bolder;">Steam Bath Club</h4>
-                        <p>Price- 2000/- for 12 baths per month</p>
-                        <p style="position: relative; top:-5px">(after that 200/- per bath for month)</p>
-                        <p>extra 1000/-  for a month for individual use room(for this visit us)</p>
-                        
-                    </div>
+              </a>
+            </div>
+            <!-- <a href=""><p>Cardio</p>
+                        <img src="pictures/cardio.jpg" width= "100%">
+                        </a> -->
+          </div>
+          <div class="column" id="danceswo" style="max-width: 76%;">
+            <div class="ui one cards">
+              <a class="violet card">
+                <div class="image">
+                  <img src="pictures/zumba dance.jpg" width="100%">
+                  <div class="ui black ribbon label" style="font-style:italic ;">Zumba and other Fitness dances</div>
+
                 </div>
-                <div class="column" id="massagepr">
-                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Massage Club</h4>
-                    <p>Price- 2500/- for 12 massages per month (time-1.5 hour)</p>
-                    <p style="position: relative;top: -7px;">(after that 150/- per massage for the month)</p>
-                    <p>(extra 100/- for one hour more for the day)</p>
-                    </div>
+              </a>
+            </div>
+            <!-- <a href=""><p>Zumba and other fitnees dances</p>
+                    <img src="pictures/zumba dance.jpg" width= "100%">
+                    </a> -->
+          </div>
+          <div class="column" id="yogawo" style="max-width: 76%;">
+            <div class="ui one cards">
+              <a class="violet card">
+                <div class="image">
+                  <img src="pictures/yoga workout.jpg" width="100%">
+                  <div class="ui black ribbon label" style="font-style:italic ;">Yoga</div>
                 </div>
-                <div class="column" id="yogapr">
-                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Yoga Club</h4>
-                    <p>Price- 1500/- per month every weekday(time 1.5 hour per day)</p>
-                    <p style="position: relative;top: -10px ;">(includes 1 locker)</p>
-                    <p>extra 1000/- for personal guru(for this visit us)</p>
-                    <p>Price- 1000/- for online class</p>
-                    </div>
+              </a>
+            </div>
+            <!-- <a href=""><p>Yoga</p>
+                    <img src="pictures/yoga workout.jpg" width="100%">
+                    </a> -->
+          </div>
+          <div class="column" id="onlineprogwo" style="max-width: 76%;">
+            <div class="ui one cards">
+              <a class="violet card">
+                <div class="image">
+                  <img src="pictures/online excercise.jpg" width="100%">
+                  <div class="ui black ribbon label" style="font-style:italic ;">Online Programmes</div>
                 </div>
-                    <div class="column" id="dancepr">
-                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Fitness Dance Club</h4>
-                    <p>Price- 1700/- per month for one hour every weekdays</p>
-                    <p style="position: relative;top: -10px;">(includes 1 locker and 2 showers per week)</p>
-                    <p>extra 1000/- for individual trainer(for this visit us)</p>
-                    <p>Price- 1000/- for online class</p>
-                    </div>
-                </div>
-                <div class="column" id="dietpr">
-                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Diet Club</h4>
-                    <p>Price- 600/- per month</p>
-                    <p style="margin-bottom:10% ;">Price 500/- for body nutrition test (whenever asked)</p>
-                    <p>Price- 600/- for online consultant</p>
-                    </div>
-                </div>
-                <div class="column" id="showerpr">
-                    <div class="pricegrid"> <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Shower</h4>
-                    <p>Price- 600/- for 12 days per month</p>
-                    <p style="margin-bottom:10% ;">(after that 25/- per day for month)</p>
-                    <p>&ast;Only for registered members</p>
-                    </div> 
-                </div>
+              </a>
+            </div>
+            <!-- <a href=""><p>online programmes</p>
+                    <img src="pictures/online excercise.jpg" width="100%">
+                    </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="event">
+      <h2 style="color: #92249c; text-align:left; margin-left: 10px;">Events</h2>
+      <div class="ui grid">
+        <div class="six wide column" id="txtev">
+          <h3 style="margin-left: 18px;">Every week price winning challenges</h3>
+        </div>
+        <div class="seven wide column"><img src="pictures/prize2.jpg" width="100%" id="imgev"></div>
+      </div>
+    </section>
+    <section id="attraction" style="margin-top:25px;">
+      <h2 style="color: #92249c;margin-left: 7px;">We give you more than anyone else does</h2>
+      <div id="steamatt" style="margin: 18px;">
+        <div class="ui grid">
+          <div class="eight wide column">
+            <div class="ui small fade reveal image">
+              <img class="visible content" src="pictures/hotroom.jpg" width="100%">
+              <img class="hidden content" src="pictures/hotroom2.jpg" width="100%">
 
             </div>
-              
-        </section>
-        <section id="form" style="margin: 15px ;">
-            <div class="ui stackable two column grid">
-                <div class="column" id="credentials">
-                    <h2 style="color: #92249c;">Interested! Fill this form to join</h2>
-                    <form class="ui form">
-                        <div class="field" id="name">
-                          <label>Name</label>
-                          <input type="text" name="name" placeholder="Prayash Kumar Satpathy">
-                        </div>
-                        <div class="field" id="age">
-                          <label>Age</label>
-                          <input type="number" name="age" placeholder="18">
-                        </div>
-                        <div class="field" id="bg">
-                          <label>Blood Group</label>
-                          <input type="text" name="bg" placeholder="B+">
-                        </div>
-                        <div class="ui form" id="gender">
-                            <div class="field">
-                              <label>Gender</label>
-                              <select class="ui search dropdown">
-                                <option value="">Select Gender</option>
-                                <option value="M">Male</option>
-                                <option value="F">Female</option>
-                                <option value="O">Others</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="field" id="number" style="margin-top:20px ;">
-                            <label>Contact No.(with country code)</label>
-                            <input type="text" name="no." placeholder="(+91)2008408408">
-                          </div>
-                          <div class="field" id="email">
-                            <label>Email Id</label>
-                            <input type="email" name="email" placeholder="you@gmail.com">
-                          </div>
-                          <div class="field" id="aboutu">
-                            <label>Mention body problem/s(if any):</label>
-                            <textarea name="aboutu" id="" cols="30" rows="2" placeholder="eg-hypertension,highblood sugar,joint pain"></textarea>
-                          </div>
-                        <div class="field" id="chkbox">
-                          <div class="checkbox">
-                            <input type="checkbox" tabindex="0" class="hidden">
-                            <label style="position: relative;top: -4px;"><a href="">I agree to the Terms and Conditions</a></label>
-                          </div>
-                        </div>
-                        
-                          <button class="ui button" type="reset">
-                            Reset
-                          </button>                  
-                          </form>       
-                </div>
-               
-                <div class="column" id="chooseplans">
-                  <!-- <h2 style="text-align: center; margin-bottom: 20px;">Select plans</h2> -->
-                  <img src="pictures/logo-modified.png" width="50%" style="position: relative; left: 27%;" alt="">
-                  <h3>Offers</h3>
-                  <div class="ui four cards" id="offer" style="margin-bottom:2%; margin-left: 15px;">
-                    <a class="violet card" id="1mon" style="width: 110px; height:125px ;">
-                      <div class="image">
-                        <h4 style="background-color: #92249c; color: white;">Duration</h4>
-                      <p>For 1 month</p>
-                      <p>Avail 05% discount on choosed plan/s</p></div>
-                      
-                    </a>
-                    <a class="violet card" id="6mon" style="width: 110px; height:125px ;">
-                      <div class="image">
-                        <h4 style="background-color: #92249c; color: white;">Duration</h4>
-                      <p>For 6 months</p>
-                      <p>Avail 10% discount on choosed plan/s</p>
-                      </div>
-                    </a>
-                    <a class="violet card" id="12mon" style="width: 110px; height:125px ;">
-                      <div class="image">
-                        <h4 style="background-color: #92249c; color: white;">Duration</h4>
-                      <p>For 12 months</p>
-                      <p>Avail 20% discount on choosed plan/s</p>
-                      </div>
-                    </a>
-                    
-                  </div>
-                  <select class="ui dropdown" id="duration" onchange="selecttimefunc(this)">
-                    <option value="">select duration for all below plans</option>
-                    <option value="5">1 month</option>
-                    <option value="10">6 months</option>
-                    <option value="20">12 months</option>
-                  </select>
-                    <div class="ui form">
-                        <div class="field">
-                          <label for="pln" style=" font-size: 15px; margin-top: 5px;color: #92249c;">Select Plan</label>
-                          <!-- onchange="calc()" -->
-                          <select multiple="multiple" class="ui dropdown" id="plans" onchange="total(this)">
-                            <option value="">Choose Plan/s</option>
-                            <option value="3000">Gym Club</option>
-                            <option value="2000">Steam Club</option> 
-                            <option value="2500">Massage Club</option>
-                            <option value="1500">Yoga Club</option>
-                            <option value="1000">Yoga Club(online)</option>
-                            <option value="1700">Fitness Dance Club</option>
-                            <option value="1000">Fitness Dance Club(online)</option>
-                            <option value="600">Diet Club</option>
-                            <option value="600">Diet Club(online)</option>
-                          </select>  
-                          <!-- <button type="button" id="calc" onclick="calc()">Calculate</button>                         -->
-                        </div>
-                      </div>
-                      
-                      
-                   
-                    <!-- <button class="ui blue button" style="color: #ffffff; margin: 10px;" id="calculate" onclick="calc()">
+          </div>
+          <div class="six wide column" id="steamatttxt">
+            <h3 style="font-weight: bolder">STEAM BATH</h3>
+            <p style="text-shadow: none;">Enjoy our steam bath. We also provide you moisturising lotion and oils.
+              Rejuvinate your body.</p>
+          </div>
+        </div>
+      </div>
+      <div id="massageatt" style="margin: 18px;">
+        <div class="ui grid">
+          <div class="eight wide column" id="massageatttxt">
+            <h3 style="font-weight: bolder;">MASSAGE</h3>
+            <p style="text-shadow: none;">Our staffs are experienced. The rooms are well-ventilated. We provide both
+              orthopedic and normal massage.</p>
+          </div>
+          <div class="six wide column">
+            <div class="ui small fade reveal image">
+              <img class="visible content" src="pictures/massage real1.jpg" width="100%">
+              <img class="hidden content" src="pictures/massage real 2.jpg" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="yogaatt" style="margin: 18px;">
+        <div class="ui grid">
+          <div class="eight wide column">
+            <div class="ui small fade reveal image">
+              <img class="visible content" src="pictures/yoga real 2.jpg">
+              <img class="hidden content" src="pictures/yoga real.jpg">
+            </div>
+          </div>
+          <div class="six wide column" id="yogaatttxt">
+            <h3 style="font-weight: bolder;">YOGA</h3>
+            <p style="text-shadow: none;">We teach you many asanas based upon body condition and take you a level up
+              each day.</p>
+          </div>
+        </div>
+      </div>
+      <div id="danceatt" style="margin: 18px;">
+        <div class="ui grid">
+          <div class="eight wide column" id="dancetxtatt">
+            <h3 style="font-weight: bolder;">FITNESS DANCES</h3>
+            <p style="text-shadow: none;">We provide you many fitness dances like zumba, aerobics and etc. The teachers
+              are very friendly. The class which you never wish to skip for sure. </p>
+          </div>
+          <div class="six wide column">
+            <div class="ui small fade reveal image">
+              <img class="visible content" src="pictures/dance1.jpg">
+              <img class="hidden content" src="pictures/dance2.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dietatt" style="margin: 18px;">
+        <div class="ui grid">
+          <div class="eight wide column">
+            <div class="ui small fade reveal image">
+              <img class="visible content" src="pictures/dietician hover1.jpg">
+              <img class="hidden content" src="pictures/deitician hover 2.jpg">
+            </div>
+          </div>
+          <div class="six wide column" id="diettxtatt">
+            <h3 style="font-weight: bolder;">DIETICIAN</h3>
+            <p style="text-shadow: none;">We believe every body is unique. We examine your body and diet to give you a
+              proper diet. Please feel free to ask us. </p>
+          </div>
+        </div>
+      </div>
+      <div id="showeratt" style="margin: 18px;">
+        <div class="ui grid">
+          <div class="eight wide column" id="showeratttxt">
+            <h3 style="font-weight: bolder;">HOT/COLD SHOWER</h3>
+            <p style="text-shadow: none;">It is good to have cold showers after a workout. We also have gyesers. Our
+              bathrooms are well-ventilated.</p>
+          </div>
+          <div class="six wide column">
+            <div class="ui small fade reveal image">
+              <img class="visible content" src="pictures/hot shower.jpg">
+              <img class="hidden content" src="pictures/cold shower.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lockeratt" style="margin: 18px;">
+        <div class="ui grid">
+          <div class="eight wide column">
+            <div class="ui small fade reveal image">
+              <img class="visible content" src="pictures/closed locker.jpg">
+              <img class="hidden content" src="pictures/open locker.jpg">
+            </div>
+          </div>
+          <div class="six wide column" id="lockeratttxt">
+            <h3 style="font-weight: bolder;">IDCARD SWIPE LOCKERS</h3>
+            <p style="text-shadow: none;">
+              We have Id card swipe and open lockers.The Id card is your registration card itself. The lockers are
+              spacious.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="areas" style="margin: 15px;">
+      <h2 style="color: #92249c;font-weight: bolder;">Rooms and Staffs</h2>
+      <div class="ui grid" style="margin: 15px;">
+        <div class="doubling three column row">
+          
+        
+        <div class="column" id="gymar" style="margin-bottom: 15px;">
+          <div class="ui raised card" style="width: 350px;">
+            <div class="ui slide masked reveal image">
+              <img src="pictures/gymroom.jpg" class="visible content">
+              <img src="pictures/gymstaff.jpg" class="hidden content">
+            </div>
+            <div class="content">
+              <a class="header" style="font-style: italic;">Gym Club</a>
+            </div>
+          </div>
+        </div>
+        <div class="column" id="steamar">
+          <div class="ui raised card" style="width: 350px;">
+            <div class="ui slide masked reveal image">
+              <img src="pictures/hotroomar.jpg" class="visible content">
+              <img src="pictures/steamequip.jpg" class="hidden content">
+            </div>
+            <div class="content">
+              <a class="header" style="font-style: italic;">Steam Bath Club</a>
+            </div>
+          </div>
+        </div>
+        <div class="column" id="masaagear">
+          <div class="ui raised card" style="width: 350px;">
+            <div class="ui slide masked reveal image">
+              <img src="pictures/massageroom.jpg" class="visible content">
+              <img src="pictures/massage crew.jpg" class="hidden content">
+            </div>
+            <div class="content">
+              <a class="header" style="font-style: italic;">Massage Club</a>
+            </div>
+          </div>
+        </div>
+        <div class="column" id="yogaar">
+          <div class="ui raised card" style="width: 350px;">
+            <div class="ui slide masked reveal image">
+              <img src="pictures/yogaroom.jpg" class="visible content">
+              <img src="pictures/yoga crew.jpg" class="hidden content">
+            </div>
+            <div class="content">
+              <a class="header" style="font-style: italic;">Yoga Club</a>
+            </div>
+          </div>
+        </div>
+        <div class="column" id="dancear">
+          <div class="ui raised card" style="width: 350px;">
+            <div class="ui slide masked reveal image">
+              <img src="pictures/danceroom.jpg" class="visible content">
+              <img src="pictures/dance tutors.jpg" class="hidden content">
+            </div>
+            <div class="content">
+              <a class="header" style="font-style: italic;">Fitness Dance Club</a>
+            </div>
+          </div>
+        </div>
+        <div class="column" id="dietar">
+          <div class="ui raised card" style="width: 350px;">
+            <div class="ui slide masked reveal image">
+              <img src="pictures/nutritionist room.jpg" class="visible content">
+              <img src="pictures/dieticians.jpg" class="hidden content">
+            </div>
+            <div class="content">
+              <a class="header" style="font-style: italic;">Diet Club</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="price" style="margin: 15px;">
+      <h2 style="color: #92249c;">Price</h2>
+      <!-- <h3 style="text-align: center; margin-bottom: 40px;">Registration Fees- 4000/-(Lifetime Membership)</h3> -->
+      <div class="ui grid">
+        <div class="doubling four column row">
+        <div class="column" id="gympr">
+          <div class="pricegrid">
+            <h4 style="margin-bottom: 10%; color: #92249c;font-weight: bolder;">Gym Club</h4>
+            <div>
+              <p>Price- 3000/- per month</p>
+              <p style="margin: 0%; position: relative;top: -15px;">(including 9 showers per month + locker)</p>
+              <p>extra 1000/- for personal trainer(for this visit us)</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="column" id="bathpr">
+          <div class="pricegrid">
+            <h4 style="margin-bottom: 10%; color: #92249c;font-weight: bolder;">Steam Bath Club</h4>
+            <p>Price- 2000/- for 12 baths per month</p>
+            <p style="position: relative; top:-5px">(after that 200/- per bath for month)</p>
+            <p>extra 1000/- for a month for individual use room(for this visit us)</p>
+
+          </div>
+        </div>
+        <div class="column" id="massagepr">
+          <div class="pricegrid">
+            <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Massage Club</h4>
+            <p>Price- 2500/- for 12 massages per month (time-1.5 hour)</p>
+            <p style="position: relative;top: -7px;">(after that 150/- per massage for the month)</p>
+            <p>(extra 100/- for one hour more for the day)</p>
+          </div>
+        </div>
+        <div class="column" id="yogapr">
+          <div class="pricegrid">
+            <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Yoga Club</h4>
+            <p>Price- 1500/- per month every weekday(time 1.5 hour per day)</p>
+            <p style="position: relative;top: -10px ;">(includes 1 locker)</p>
+            <p>extra 1000/- for personal guru(for this visit us)</p>
+            <p>Price- 1000/- for online class</p>
+          </div>
+        </div>
+        <div class="column" id="dancepr">
+          <div class="pricegrid">
+            <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Fitness Dance Club</h4>
+            <p>Price- 1700/- per month for one hour every weekdays</p>
+            <p style="position: relative;top: -10px;">(includes 1 locker and 2 showers per week)</p>
+            <p>extra 1000/- for individual trainer(for this visit us)</p>
+            <p>Price- 1000/- for online class</p>
+          </div>
+        </div>
+        <div class="column" id="dietpr">
+          <div class="pricegrid">
+            <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Diet Club</h4>
+            <p>Price- 600/- per month</p>
+            <p style="margin-bottom:10% ;">Price 500/- for body nutrition test (whenever asked)</p>
+            <p>Price- 600/- for online consultant</p>
+          </div>
+        </div>
+        <div class="column" id="showerpr">
+          <div class="pricegrid">
+            <h4 style="margin-bottom: 10%;color: #92249c;font-weight: bolder;">Shower</h4>
+            <p>Price- 600/- for 12 days per month</p>
+            <p style="margin-bottom:10% ;">(after that 25/- per day for month)</p>
+            <p>&ast;Only for registered members</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+    <section id="form" style="margin: 15px ;">
+      <div class="ui stackable two column grid">
+        <div class="column" id="credentials">
+          <h2 style="color: #92249c;">Interested! Fill this form to join</h2>
+          <form class="ui form">
+            <div class="field" id="name">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Prayash Kumar Satpathy">
+            </div>
+            <div class="field" id="age">
+              <label>Age</label>
+              <input type="number" name="age" placeholder="18">
+            </div>
+            <div class="field" id="bg">
+              <label>Blood Group</label>
+              <input type="text" name="bg" placeholder="B+">
+            </div>
+            <div class="ui form" id="gender">
+              <div class="field">
+                <label>Gender</label>
+                <select class="ui search dropdown">
+                  <option value="">Select Gender</option>
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                  <option value="O">Others</option>
+                </select>
+              </div>
+            </div>
+            <div class="field" id="number" style="margin-top:20px ;">
+              <label>Contact No.(with country code)</label>
+              <input type="text" name="no." placeholder="(+91)2008408408">
+            </div>
+            <div class="field" id="email">
+              <label>Email Id</label>
+              <input type="email" name="email" placeholder="you@gmail.com">
+            </div>
+            <div class="field" id="aboutu">
+              <label>Mention body problem/s(if any):</label>
+              <textarea name="aboutu" id="" cols="30" rows="2"
+                placeholder="eg-hypertension,highblood sugar,joint pain"></textarea>
+            </div>
+            <div class="field" id="chkbox">
+              <div class="checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label style="position: relative;top: -4px;"><a href="">I agree to the Terms and Conditions</a></label>
+              </div>
+            </div>
+
+            <button class="ui button" type="reset">
+              Reset
+            </button>
+          </form>
+        </div>
+
+        <div class="column" id="chooseplans">
+          <!-- <h2 style="text-align: center; margin-bottom: 20px;">Select plans</h2> -->
+          <img src="pictures/logo-modified.png" width="50%" style="position: relative; left: 27%;" alt="">
+          <h3>Offers</h3>
+          <div class="ui four cards" id="offer" style="margin-bottom:2%; margin-left: 15px;">
+            <a class="violet card" id="1mon" style="width: 110px; height:125px ;">
+              <div class="image">
+                <h4 style="background-color: #92249c; color: white;">Duration</h4>
+                <p>For 1 month</p>
+                <p>Avail 05% discount on choosed plan/s</p>
+              </div>
+
+            </a>
+            <a class="violet card" id="6mon" style="width: 110px; height:125px ;">
+              <div class="image">
+                <h4 style="background-color: #92249c; color: white;">Duration</h4>
+                <p>For 6 months</p>
+                <p>Avail 10% discount on choosed plan/s</p>
+              </div>
+            </a>
+            <a class="violet card" id="12mon" style="width: 110px; height:125px ;">
+              <div class="image">
+                <h4 style="background-color: #92249c; color: white;">Duration</h4>
+                <p>For 12 months</p>
+                <p>Avail 20% discount on choosed plan/s</p>
+              </div>
+            </a>
+
+          </div>
+          <select class="ui dropdown" id="duration" onchange="selecttimefunc(this)">
+            <option value="">select duration for all below plans</option>
+            <option value="5">1 month</option>
+            <option value="10">6 months</option>
+            <option value="20">12 months</option>
+          </select>
+          <div class="ui form">
+            <div class="field">
+              <label for="pln" style=" font-size: 15px; margin-top: 5px;color: #92249c;">Select Plan</label>
+              <!-- onchange="calc()" -->
+              <select multiple="multiple" class="ui dropdown" id="plans" onchange="total(this)">
+                <option value="">Choose Plan/s</option>
+                <option value="3000">Gym Club</option>
+                <option value="2000">Steam Club</option>
+                <option value="2500">Massage Club</option>
+                <option value="1500">Yoga Club</option>
+                <option value="1000">Yoga Club(online)</option>
+                <option value="1700">Fitness Dance Club</option>
+                <option value="1000">Fitness Dance Club(online)</option>
+                <option value="600">Diet Club</option>
+                <option value="600">Diet Club(online)</option>
+              </select>
+              <!-- <button type="button" id="calc" onclick="calc()">Calculate</button>                         -->
+            </div>
+          </div>
+
+
+
+          <!-- <button class="ui blue button" style="color: #ffffff; margin: 10px;" id="calculate" onclick="calc()">
                       Calculate
                     </button> -->
-                        <div id="formtl"> <span>Total Amount-</span ><span id="final" ></span> </div>
-                        <span id="formvl"></span>
-                        <div style="text-align: center; margin-bottom: 8px;">    <a href="" >
-                          <button class="ui violet button">
-                                SignUp and Proceed to Payment
-                              </button></a>  </div> 
+          <div id="formtl"> <span>Total Amount-</span><span id="final"></span> </div>
+          <span id="formvl"></span>
+          <div style="text-align: center; margin-bottom: 8px;"> <a href="">
+              <button class="ui violet button">
+                SignUp and Proceed to Payment
+              </button></a> </div>
 
-                </div>
-            </div>
-        </section>      
-      
-      </div>
-      <footer id="foot">
-        <div class="ui inverted vertical footer segment" style="padding-top: 8%;">
-          <div class="ui container">
-            <div class="ui stackable inverted divided equal height stackable grid">
-              <div class="three wide column">
-                <!-- <h4 class="ui inverted header">About</h4> -->
-                <div class="ui inverted link list" style="margin-left: 25px;">
-                  <!-- <div><img src="pictures/logo.jpg" height="45px" width="53px"></div> -->
-                  <a href="#" class="item">
-                    <div style="margin-bottom: 5px;"><img src="pictures/logo-modified.png" width="80%" style="max-width: 76px;"></div>
-                    <p class="nm" style="font-weight: bolder;">Fitness</p>
-                    <p class="nm" style=" position: relative;left: 36px; font-weight: bolder;
-                    top: -27px;">Mania</p></a>
-                  <!-- <a href="#" class="item">Religious Ceremonies</a> -->
-                  <!-- <a href="#" class="item">Gazebo Plans</a> -->
-                </div>
-              </div>
-              <div class="three wide column">
-              
-                <div class="ui inverted link list">
-                  <p style="color: #ffffff;"><a href="#" class="item">Privacy Policy</a></p>
-                  <p style="color: #ffffff;"><a href="#" class="item">Refund Policy</a></p>
-                  <p style="color: #ffffff;"><a href="#" class="item">Terms and conditions</a></p>
-                  <p style="color: #ffffff;"></p><a href="#" class="item">FAQ</a></p>
-                </div>
-              </div>
-              <div class="seven wide column" style="text-align: center;">
-                <h4 style=" margin-bottom: 14px;"><a href="#" class="item" style="color: rgba(255, 255, 255, 0.829);">CONTACT US</a></h4>
-                <h4 style=" margin-bottom: 14px;"><a href="#" class="item" style="color: rgba(255, 255, 255, 0.822);">LOCATE US</a></h4>
-                <h4 style=" margin-bottom: 14px;"><a href="#" class="item" style="color: rgba(255, 255, 255, 0.829);">BLOG</a></h4>
-                <h4 style=" margin-bottom: 14px;"><a href="#" class="item" style="color: rgba(255, 255, 255, 0.829);">TALKS</a></h4>
-                <h4 style=" margin-bottom: 14px;"><a href="#" class="item" style="color: rgba(255, 255, 255, 0.829);">CAREERS</a></h4>
-              </div>
-              <div class="three wide column">
-    
-                <div class="ui inverted link list">
-                  <a href="#" class="item"><img src="pictures/AppStore.png" style="max-width: 100px;" alt=""></a>
-                  <a href="#" class="item"><img src="pictures/playstore.jpg" style="max-width: 100px; margin-bottom: 30px;"alt=""></a>
-                  <!-- <p>Follow Us On</p> -->
-                  
-                    <span><a href=""><img src="pictures/insta-PhotoRoom (1).png" style="max-width: 22px;position: relative;top: 1px;  "alt=""></a></span>
-                    <span><a href=""><img src="pictures/facebook-PhotoRoom (1).png" style="max-width: 35px; position: relative; top: -1px;"alt=""></a></span>
-                  <span><a href=""><img src="pictures/linked.png" style="max-width: 15px; margin: 4px;"alt=""></a></span>
-                  <span><a href=""><img src="pictures/snapchat.png" style="max-width: 17px; margin: 6px; position: relative; top: 3px"alt=""></a></span>
-                  <span><a href=""><img src="pictures/twitter.png" style="max-width:14px; margin: 4px;"alt=""></a></span>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          
         </div>
-      </footer>
+      </div>
+    </section>
+
+  </div>
+  <footer id="foot">
+    <div class="ui inverted vertical footer segment" style="padding-top: 8%;">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="three wide column">
+            <!-- <h4 class="ui inverted header">About</h4> -->
+            <div class="ui inverted link list" style="margin-left: 25px;">
+              <!-- <div><img src="pictures/logo.jpg" height="45px" width="53px"></div> -->
+              <a href="#" class="item">
+                <div style="margin-bottom: 5px;"><img src="pictures/logo-modified.png" width="80%"
+                    style="max-width: 76px;"></div>
+                <p class="nm" style="font-weight: bolder;">Fitness</p>
+                <p class="nm" style=" position: relative;left: 36px; font-weight: bolder;
+                    top: -27px;">Mania</p>
+              </a>
+              <!-- <a href="#" class="item">Religious Ceremonies</a> -->
+              <!-- <a href="#" class="item">Gazebo Plans</a> -->
+            </div>
+          </div>
+          <div class="three wide column">
+
+            <div class="ui inverted link list">
+              <p style="color: #ffffff;"><a href="#" class="item">Privacy Policy</a></p>
+              <p style="color: #ffffff;"><a href="#" class="item">Refund Policy</a></p>
+              <p style="color: #ffffff;"><a href="#" class="item">Terms and conditions</a></p>
+              <p style="color: #ffffff;"></p><a href="#" class="item">FAQ</a></p>
+            </div>
+          </div>
+          <div class="seven wide column" style="text-align: center;">
+            <h4 style=" margin-bottom: 14px;"><a href="#" class="item"
+                style="color: rgba(255, 255, 255, 0.829);">CONTACT US</a></h4>
+            <h4 style=" margin-bottom: 14px;"><a href="#" class="item" style="color: rgba(255, 255, 255, 0.822);">LOCATE
+                US</a></h4>
+            <h4 style=" margin-bottom: 14px;"><a href="#" class="item"
+                style="color: rgba(255, 255, 255, 0.829);">BLOG</a></h4>
+            <h4 style=" margin-bottom: 14px;"><a href="#" class="item"
+                style="color: rgba(255, 255, 255, 0.829);">TALKS</a></h4>
+            <h4 style=" margin-bottom: 14px;"><a href="#" class="item"
+                style="color: rgba(255, 255, 255, 0.829);">CAREERS</a></h4>
+          </div>
+          <div class="three wide column">
+
+            <div class="ui inverted link list">
+              <a href="#" class="item"><img src="pictures/AppStore.png" style="max-width: 100px;" alt=""></a>
+              <a href="#" class="item"><img src="pictures/playstore.jpg" style="max-width: 100px; margin-bottom: 30px;"
+                  alt=""></a>
+              <!-- <p>Follow Us On</p> -->
+
+              <span><a href=""><img src="pictures/insta-PhotoRoom (1).png"
+                    style="max-width: 22px;position: relative;top: 1px;  " alt=""></a></span>
+              <span><a href=""><img src="pictures/facebook-PhotoRoom (1).png"
+                    style="max-width: 35px; position: relative; top: -1px;" alt=""></a></span>
+              <span><a href=""><img src="pictures/linked.png" style="max-width: 15px; margin: 4px;" alt=""></a></span>
+              <span><a href=""><img src="pictures/snapchat.png"
+                    style="max-width: 17px; margin: 6px; position: relative; top: 3px" alt=""></a></span>
+              <span><a href=""><img src="pictures/twitter.png" style="max-width:14px; margin: 4px;" alt=""></a></span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
+
 </html>

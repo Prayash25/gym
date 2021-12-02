@@ -35,6 +35,7 @@ function selecttimefunc(val)
 {
   discountper=parseInt(val.options[val.selectedIndex].value,10);
   console.log(discountper);
+  
 }
 
  let total= function(sel) {
@@ -75,6 +76,7 @@ val.style.fontSize="20px";
 val.style.color="black"
 val.style.fontWeight="bolder";
 }
+
 
 
 // function calc(){
