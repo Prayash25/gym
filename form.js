@@ -32,28 +32,32 @@ let discountper=0;
 let tl=0;
 let discount=0;
 function tprice(){
+  let fp=0;
+  discount= (tl*discountper)/100;
+  fp = tl-discount;
+  let val=document.getElementById("final");
   if(tl!=0 && discountper!=0){
-    let fp=0;
-    discount= (tl*discountper)/100;
-    fp = tl-discount;
-    let val=document.getElementById("final");
   // val.style(color: aqua)
-  if(discountper==5){
+   if(discountper==5){
     
     val.innerText= fp;
+   }
+   else if(discountper==10)
+   {
+   val.innerText=fp*6;
+   }
+   else if(discountper==20)
+   {
+   val.innerText=fp*12;
+   }
   }
-  else if(discountper==10)
+  else
   {
-  val.innerText=fp*6;
-  }
-  else if(discountper==20)
-  {
-    val.innerText=fp*12;
+    val.innerText=0;
   }
   val.style.fontSize="20px";
   val.style.color="black"
   val.style.fontWeight="bolder";
-  }
 }
 function selecttimefunc(val)
 {
