@@ -303,7 +303,7 @@
       </div>
       <div id="showeratt" style="margin: 18px;">
         <div class="ui grid">
-          <div class="eight wide column" id="showeratttxt">
+          <div class="eight wide column" id="showertxtatt">
             <h3 style="font-weight: bolder;">HOT/COLD SHOWER</h3>
             <p style="text-shadow: none;">It is good to have cold showers after a workout. We also have gyesers. Our
               bathrooms are well-ventilated.</p>
@@ -324,7 +324,7 @@
               <img class="hidden content" src="pictures/open locker.jpg">
             </div>
           </div>
-          <div class="six wide column" id="lockeratttxt">
+          <div class="six wide column" id="lockertxtatt">
             <h3 style="font-weight: bolder;">IDCARD SWIPE LOCKERS</h3>
             <p style="text-shadow: none;">
               We have Id card swipe and open lockers.The Id card is your registration card itself. The lockers are
@@ -481,21 +481,25 @@
 
     </section>
     <section id="form" style="margin: 15px ;">
+      <form class="ui form" onsubmit="return validation()">
       <div class="ui stackable two column grid">
         <div class="column" id="credentials">
           <h2 style="color: #92249c;">Interested! Fill this form to join</h2>
-          <form class="ui form">
+          <!-- form -->
             <div class="field" id="name">
               <label >Name</label>
-              <input type="text" name="name" placeholder="Prayash Kumar Satpathy">
+              <input type="text" id="spname" name="name" placeholder="Prayash Kumar Satpathy">
+              <p id="innm" style="color: red;"></p>
             </div>
             <div class="field" id="age">
               <label>Age</label>
-              <input type="number" name="age" placeholder="18">
+              <input type="number" id="spage" name="age" placeholder="18">
+              <p id="inage" style="color: red;"></p>
             </div>
             <div class="field" id="bg">
               <label>Blood Group</label>
-              <input type="text" name="bg" placeholder="B+">
+              <input type="text" id="spbg" name="bg" placeholder="B+">
+              <p id="inbg" style="color: red;"></p>
             </div>
             <div class="ui form" id="gender">
               <div class="field">
@@ -510,11 +514,13 @@
             </div>
             <div class="field" id="number" style="margin-top:20px ;">
               <label>Contact No.(with country code)</label>
-              <input type="text" name="no." placeholder="(+91)2008408408">
+              <input type="text" name="no." id="spnum" placeholder="6008408408">
+              <p id="innum" style="color: red;"></p>
             </div>
             <div class="field" id="email">
               <label>Email Id</label>
-              <input type="email" name="email" placeholder="you@gmail.com">
+              <input type="email" name="email" id="spemail" placeholder="you@gmail.com">
+              <p id="inemail" style="color: red;"></p>
               <!-- <input type="file" placeholder="Choose"> -->
             </div>
             <div class="field" id="aboutu">
@@ -532,8 +538,19 @@
             <button class="ui button" type="reset">
               Reset
             </button>
-          </form>
+            <!-- <div style="text-align: center; margin-bottom: 8px;"> <a href="">
+              </a> </div> -->
+            <button style="margin-left: 40px;" class="ui violet button" type="submit">
+                SignUp & Proceed to Payment
+            </button>
+            
+            
+          
         </div>
+        <!-- <div style="text-align: center; margin-bottom: 8px;"> <a href="">
+          <button class="ui violet button" type="submit">
+            SignUp and Proceed to Payment
+          </button></a> </div> -->
 
         <div class="column" id="chooseplans">
           <!-- <h2 style="text-align: center; margin-bottom: 20px;">Select plans</h2> -->
@@ -597,13 +614,11 @@
                     </button> -->
           <div id="formtl"> <span>Total Amount-</span><span id="final"></span> </div>
           <span id="formvl"></span>
-          <div style="text-align: center; margin-bottom: 8px;"> <a href="">
-              <button class="ui violet button">
-                SignUp and Proceed to Payment
-              </button></a> </div>
-
+          
         </div>
       </div>
+      
+    </form>
     </section>
 
   </div>
@@ -620,7 +635,7 @@
                     style="max-width: 76px;"></div>
                 <p class="nm" style="font-weight: bolder;">Fitness</p>
                 <p class="nm" style=" position: relative;left: 36px; font-weight: bolder;
-                    top: -27px;">Mania</p>
+                    top: -20px;">Mania</p>
               </a>
               <!-- <a href="#" class="item">Religious Ceremonies</a> -->
               <!-- <a href="#" class="item">Gazebo Plans</a> -->
@@ -671,6 +686,7 @@
 
     </div>
   </footer>
-</body>
+  
 
+</body>
 </html>

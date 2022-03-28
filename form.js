@@ -86,19 +86,56 @@ tl=total;
 tprice();
 // console.log(fp);
 }
+// form validation...
+function validation()
+{
+  var name=document.getElementById('spname').value;
+  var age=document.getElementById('spage').value;
+  var bg=document.getElementById('spbg').value;
+  var num=document.getElementById('spnum').value;
+  var email=document.getElementById('spemail').value;
+  var nmchk=/^[a-zA-Z]{3,40}$/;
+  var agechk=/^[1-70]{1}$/;
+  var bgchk=/^[a-zA-Z]{1,2}[+-]{1}$/;
+  var numchk=/^[56789]{1}[0-9]{9}$/;
+  var emailchk=/^[a-zA-Z0-9_]{2,}[@]{1}[a-z][.]{1}[a-z]{7}$/;
+  if (nmchk.test(name)){
+    document.getElementById(innm).innerHTML="";
+  }
+ else{
+  document.getElementById(innm).innerHTML=" invalid name";
+   return false;
+ }
+  if (agechk.test(age)){
+    document.getElementById(inage).innerHTML=" ";
+  }
+ else{
+  document.getElementById(inage).innerHTML=" unsuitable age";
+   return false;
+ }
+  if (bgchk.test(bg)){
+    document.getElementById(inbg).innerHTML=" ";
+  }
+ else{
+  document.getElementById(inbg).innerHTML=" invalid";
+   return false;
+ }
+  if (numchk.test(num)){
+    document.getElementById(innum).innerHTML=" ";
+  }
+ else{
+  document.getElementById(innum).innerHTML=" invalid number";
+   return false;
+ }
+  if (emailchk.test(email)){
+    document.getElementById(inemail).innerHTML=" ";
+  }
+ else{
+  document.getElementById(inemail).innerHTML=" invalid mail";
+   return false;
+ }
+}
 
-// function calc(){
-// console.log(typeOf(total), "total")
-
-
-
-  
- 
-
-// let chng= document.getElementById("final");
-// chng.innerText(fp);
-
-// console.log(selected);
 
 
 
