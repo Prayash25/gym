@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
   <script src="form.js" type="text/javascript"></script>
   <script src="nav.js" type="text/javascript"></script>
@@ -481,7 +486,8 @@
 
     </section>
     <section id="form" style="margin: 15px ;">
-      <form class="ui form" onsubmit="return validation()">
+      <form class="ui form" onsubmit="return validation()" method="post" name="gym-data">
+        <!-- onsubmit -->
       <div class="ui stackable two column grid">
         <div class="column" id="credentials">
           <h2 style="color: #92249c;">Interested! Fill this form to join</h2>
@@ -504,7 +510,7 @@
             <div class="ui form" id="gender">
               <div class="field">
                 <label>Gender</label>
-                <select class="ui search dropdown">
+                <select class="ui search dropdown" name="gender">
                   <option value="">Select Gender</option>
                   <option value="M">Male</option>
                   <option value="F">Female</option>
@@ -513,7 +519,7 @@
               </div>
             </div>
             <div class="field" id="number" style="margin-top:20px ;">
-              <label>Contact No.(with country code)</label>
+              <label>Contact No.</label>
               <input type="text" name="no." id="spnum" placeholder="6008408408">
               <p id="innum" style="color: red;"></p>
             </div>
@@ -581,7 +587,7 @@
             </a>
 
           </div>
-          <select class="ui dropdown" id="duration" onchange="selecttimefunc(this)">
+          <select class="ui dropdown" id="duration" onchange="selecttimefunc(this)" name="planDuration">
             <option value="">select duration for all below plans</option>
             <option value="5">1 month</option>
             <option value="10">6 months</option>
@@ -591,7 +597,7 @@
             <div class="field">
               <label for="pln" style=" font-size: 15px; margin-top: 5px;color: #92249c;">Select Plan</label>
               <!-- onchange="calc()" -->
-              <select multiple="multiple" class="ui dropdown" id="plans" onchange="total(this)">
+              <select multiple="multiple" class="ui dropdown" id="plans" onchange="total(this)" name="plans">
                 <option value="">Choose Plan/s</option>
                 <option value="3000">Gym Club</option>
                 <option value="2000">Steam Club</option>
@@ -612,12 +618,22 @@
           <!-- <button class="ui blue button" style="color: #ffffff; margin: 10px;" id="calculate" onclick="calc()">
                       Calculate
                     </button> -->
-          <div id="formtl"> <span>Total Amount-</span><span id="final"></span> </div>
+          <div id="formtl"> <span>Total Amount-</span><span id="final" name="total"></span> </div>
           <span id="formvl"></span>
           
         </div>
       </div>
-      
+      <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyKr_jV_5sVB3G4Kj8hQ_IbTsONKOhK3PyF69q2W2p5gylK8Yw54-uFxguAtWVWpMLL/exec'
+        const form = document.forms['gym-data']
+        
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+        </script>
     </form>
     </section>
 
@@ -686,7 +702,33 @@
 
     </div>
   </footer>
-  
+  <!-- <div class="container register" id="gsheet">
+    <div class="row">
+        <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Connect Google Spreadsheet to HTML</h3>
+                    <div class="row register-form">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="submit" class="btnSubmit btn-block" value="Login" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div> -->
+<!-- </div> -->  
 
 </body>
 </html>
